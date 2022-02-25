@@ -149,22 +149,22 @@ class Square extends Rectangle {
     }
 
     public double getSide() {
-        return(super.width);
+        return(super.getWidth());
     }
 
     public void setSide(double side) {
-        this.setWidth(side);
-        this.setLength(side);
+        super.setWidth(side);
+        super.setLength(side);
     }
 
     @Override
 
     public void setWidth(double side) {
-        super.width = side;
+        this.setSide(side);
     }
 
     public void setLength(double side) {
-        super.length = side;
+        this.setSide(side);
     }
 
     public String toString() {
